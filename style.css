@@ -1147,3 +1147,184 @@ footer{
 .dl-gate-go:not(:disabled):hover{ transform:translateY(-3px); box-shadow:0 12px 30px rgba(37,91,239,.45); }
 .dl-gate-note{ display:block; margin-top:.9rem; color:#7280a8; font-size:.8rem; }
 @media (max-width:480px){ .dl-gate-box{ padding:2rem 1rem 1.4rem; } .dl-gate-count{ font-size:2.2rem; } }
+
+/* =========================================================
+   MG BUTTON FX v2 — next-gen button animations (all buttons)
+   3D cursor tilt + shine sweep + glow spot + tap ripple + spring press
+   ========================================================= */
+:root{
+  --mg-fx-spring:cubic-bezier(.34,1.56,.64,1);
+}
+
+/* Neutralize legacy ripple system (replaced by the new engine) */
+.ripple::after{ content:none !important; }
+.ripple-effect{ display:none !important; }
+
+/* All clickable elements get the FX base */
+button,
+.nav-link,
+.mg-cat-tile,
+.download-btn,
+.download-link,
+.cta, .mg-btn, .store-btn, .worldcup-btn, .pcchecker-btn,
+.chatbot-btn, .community-btn, .floating-btn, .mg-cart-btn-dark,
+.mg-hero-btn, .mg-chip, .fsp-chip, .fsp-btn,
+.mg-prod-cart, .mg-mystery-fab, .dl-gate-go,
+.nav-search-icon, .lang-toggle-btn, .mobile-menu-btn,
+.fsp-close, .fsp-clear{
+  --mg-rx:0deg;
+  --mg-ry:0deg;
+  --mg-mx:50%;
+  --mg-my:50%;
+  position:relative;
+  overflow:hidden;
+  isolation:isolate;
+  transform:perspective(700px) rotateX(var(--mg-rx)) rotateY(var(--mg-ry)) translateZ(0);
+  transition:
+    transform .38s var(--mg-fx-spring),
+    box-shadow .35s var(--ease),
+    background .3s var(--ease),
+    border-color .3s var(--ease),
+    color .3s var(--ease),
+    filter .3s var(--ease),
+    opacity .3s;
+  will-change:transform;
+}
+
+/* Hover: lift + scale + glow aura (tilt vars follow the cursor via JS) */
+button:hover,
+.nav-link:hover, .mg-cat-tile:hover, .download-btn:hover, .download-link:hover,
+.cta:hover, .mg-btn:hover, .store-btn:hover, .worldcup-btn:hover, .pcchecker-btn:hover,
+.chatbot-btn:hover, .community-btn:hover, .floating-btn:hover, .mg-cart-btn-dark:hover,
+.mg-hero-btn:hover, .mg-chip:hover, .fsp-chip:hover, .fsp-btn:hover,
+.mg-prod-cart:hover, .mg-mystery-fab:hover, .dl-gate-go:hover,
+.nav-search-icon:hover, .lang-toggle-btn:hover, .mobile-menu-btn:hover,
+.fsp-close:hover, .fsp-clear:hover{
+  z-index:5;
+  transform:perspective(700px)
+            rotateX(var(--mg-rx)) rotateY(var(--mg-ry))
+            translateY(-3px) scale(1.045);
+  filter:brightness(1.08) saturate(1.1);
+  box-shadow:
+    0 16px 38px rgba(37,91,239,.45),
+    0 0 26px rgba(95,208,255,.30),
+    inset 0 1px 0 rgba(255,255,255,.22);
+}
+
+/* Active press: springy squash */
+button:active,
+.nav-link:active, .mg-cat-tile:active, .download-btn:active, .download-link:active,
+.cta:active, .mg-btn:active, .store-btn:active, .worldcup-btn:active, .pcchecker-btn:active,
+.chatbot-btn:active, .community-btn:active, .floating-btn:active, .mg-cart-btn-dark:active,
+.mg-hero-btn:active, .mg-chip:active, .fsp-chip:active, .fsp-btn:active,
+.mg-prod-cart:active, .mg-mystery-fab:active, .dl-gate-go:active,
+.nav-search-icon:active, .lang-toggle-btn:active, .mobile-menu-btn:active,
+.fsp-close:active, .fsp-clear:active{
+  transform:perspective(700px) translateY(1px) scale(.93);
+  transition-duration:.09s;
+  filter:brightness(1.12);
+}
+
+/* Shine sweep band that crosses the button on hover */
+button::before,
+.nav-link::before, .mg-cat-tile::before, .download-btn::before, .download-link::before,
+.cta::before, .mg-btn::before, .store-btn::before, .worldcup-btn::before, .pcchecker-btn::before,
+.chatbot-btn::before, .community-btn::before, .floating-btn::before, .mg-cart-btn-dark::before,
+.mg-hero-btn::before, .mg-chip::before, .fsp-chip::before, .fsp-btn::before,
+.mg-prod-cart::before, .mg-mystery-fab::before, .dl-gate-go::before,
+.nav-search-icon::before, .lang-toggle-btn::before, .mobile-menu-btn::before,
+.fsp-close::before, .fsp-clear::before{
+  content:"";
+  position:absolute;
+  top:-30%; bottom:-30%;
+  left:0;
+  width:38%;
+  background:linear-gradient(100deg, transparent 0%, rgba(255,255,255,.42) 50%, transparent 100%);
+  transform:translateX(-160%) skewX(-18deg);
+  pointer-events:none;
+  z-index:1;
+  opacity:0;
+}
+button:hover::before,
+.nav-link:hover::before, .mg-cat-tile:hover::before, .download-btn:hover::before, .download-link:hover::before,
+.cta:hover::before, .mg-btn:hover::before, .store-btn:hover::before, .worldcup-btn:hover::before, .pcchecker-btn:hover::before,
+.chatbot-btn:hover::before, .community-btn:hover::before, .floating-btn:hover::before, .mg-cart-btn-dark:hover::before,
+.mg-hero-btn:hover::before, .mg-chip:hover::before, .fsp-chip:hover::before, .fsp-btn:hover::before,
+.mg-prod-cart:hover::before, .mg-mystery-fab:hover::before, .dl-gate-go:hover::before,
+.nav-search-icon:hover::before, .lang-toggle-btn:hover::before, .mobile-menu-btn:hover::before,
+.fsp-close:hover::before, .fsp-clear:hover::before{
+  opacity:1;
+  animation:mg-shine-sweep .85s var(--ease) forwards;
+}
+@keyframes mg-shine-sweep{
+  0%{ transform:translateX(-160%) skewX(-18deg) }
+  100%{ transform:translateX(380%) skewX(-18deg) }
+}
+
+/* Icon micro-motion on hover */
+button:hover > i,
+.mg-hero-btn:hover > i, .mg-chip:hover > i, .fsp-chip:hover > i,
+.download-btn:hover > i, .download-link:hover > i,
+.cta:hover > i, .mg-btn:hover > i, .mg-cart-btn-dark:hover > i,
+.mg-mystery-fab:hover > i, .dl-gate-go:hover > i{
+  animation:mg-icon-nudge .5s var(--mg-fx-spring);
+}
+@keyframes mg-icon-nudge{
+  0%{ transform:translateX(0) scale(1) }
+  40%{ transform:translateX(-4px) scale(1.18) }
+  100%{ transform:translateX(0) scale(1) }
+}
+
+/* Pointer-tracked glow spot (injected by JS, follows cursor/finger) */
+.mg-glowspot{
+  position:absolute;
+  width:80px; height:80px;
+  left:var(--mg-mx); top:var(--mg-my);
+  transform:translate(-50%,-50%);
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(159,228,255,.4) 0%, rgba(95,208,255,.15) 45%, transparent 70%);
+  opacity:0;
+  transition:opacity .3s var(--ease);
+  pointer-events:none;
+  z-index:1;
+  mix-blend-mode:screen;
+  filter:blur(1px);
+}
+button:hover .mg-glowspot,
+.mg-cat-tile:hover .mg-glowspot,
+.nav-link:hover .mg-glowspot,
+.download-btn:hover .mg-glowspot,
+.download-link:hover .mg-glowspot{
+  opacity:1;
+}
+
+/* Tap/press ripple wave */
+.mg-ripple{
+  position:absolute;
+  border-radius:50%;
+  pointer-events:none;
+  background:radial-gradient(circle, rgba(255,255,255,.55) 0%, rgba(180,210,255,.22) 45%, transparent 70%);
+  transform:scale(0);
+  animation:mg-ripple-wave .65s cubic-bezier(.2,.6,.3,1) forwards;
+  z-index:2;
+  mix-blend-mode:screen;
+}
+@keyframes mg-ripple-wave{
+  0%{ transform:scale(0); opacity:.9 }
+  100%{ transform:scale(2.8); opacity:0 }
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce){
+  button, .nav-link, .mg-cat-tile, .download-btn, .download-link,
+  .cta, .mg-btn, .store-btn, .worldcup-btn, .pcchecker-btn,
+  .chatbot-btn, .community-btn, .floating-btn, .mg-cart-btn-dark,
+  .mg-hero-btn, .mg-chip, .fsp-chip, .fsp-btn,
+  .mg-prod-cart, .mg-mystery-fab, .dl-gate-go,
+  .nav-search-icon, .lang-toggle-btn, .mobile-menu-btn,
+  .fsp-close, .fsp-clear{
+    transform:none !important;
+    transition:none !important;
+  }
+  button::before, .nav-link::before, .mg-cat-tile::before{ display:none; }
+}
