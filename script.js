@@ -183,7 +183,259 @@
 
         // Enhanced Data with Online Status Control
         const gamesData = {
-        pes13: {
+        crack: {
+                title: "CRACK",
+                description: "دةالباسورد بتاع ملفات فك ضغط اللعبة والاونلاين:online-fix.me",
+                image: "https://i.ytimg.com/vi/m6m25-zRJfU/maxresdefault.jpg",
+                platform: "PC",
+                rating: 4.9,
+                category: "games",
+                size: "760MB",
+                developer: "CRACK",
+                releaseYear: "2026",
+                language: "العربية + متعدد اللغات",
+                videoId: "#",
+                version: "v1.0.55",
+                onlineStatus: true, // متاح اونلاين
+                systemRequirements: {
+                    minimum: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i3-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R5 240",
+                        storage: "5 GB متاح"
+                    },
+                    recommended: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i5-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R7 250x",
+                        storage: "5 GB متاح"
+                    }
+                },
+                downloadLinks: [
+                    { name: "تحميل اللعبة", url: "https://koramaup.com/n99K", icon: "fas fa-download" },
+                    { name: "ملف الاونلاين", url: "https://koramaup.com/n99I", icon: "fas fa-download" },
+                    { name: "تحميل اخر للعبة", url: "https://1cloudfile.com/2ct7v", icon: "fas fa-download" }
+                ]
+            },
+                   thekarters2turbo: {
+                title: "The Karters 2 Turbo",
+                description: "دةالباسورد بتاع ملفات فك ضغط اللعبة والاونلاين:online-fix.me",
+                image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2269950/7de372c9941e2f7d1a44b1914f8db70985b12dcf/capsule_616x353.jpg?t=1779867619.png",
+                platform: "PC",
+                rating: 4.9,
+                category: "games",
+                size: "10.6G",
+                developer: "The Karters 2 Turbo",
+                releaseYear: "2026",
+                language: "العربية + متعدد اللغات",
+                videoId: "#",
+                version: "v1.0.0.1",
+                onlineStatus: true, // متاح اونلاين
+                systemRequirements: {
+                    minimum: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i3-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R5 240",
+                        storage: "5 GB متاح"
+                    },
+                    recommended: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i5-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R7 250x",
+                        storage: "5 GB متاح"
+                    }
+                },
+                downloadLinks: [
+                    { name: "1تحميل اللعبة", url: "https://gofile.io/d/josNTP", icon: "fas fa-download" },
+                    { name: "تحميل اللعبة2", url: "https://gofile.io/d/SO9J0l", icon: "fas fa-download" },
+                    { name: "تحميل اللعبة3", url: "https://gofile.io/d/V8RkUZ", icon: "fas fa-download" }
+                ]
+            },
+            shadylifesimulator: {
+                title: "Shady Life Simulator",
+                description: "دةالباسورد بتاع ملفات فك ضغط اللعبة والاونلاين:online-fix.me",
+                image: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4173620/970a4227262cfd14d4d9c09e1dcf2476ddeeb50f/capsule_616x353.jpg?t=1791495708.png",
+                platform: "PC",
+                rating: 4.9,
+                category: "games",
+                size: "1.2G",
+                developer: "Shady Life Simulator",
+                releaseYear: "2026",
+                language: "العربية + متعدد اللغات",
+                videoId: "#",
+                version: "v11102026",
+                onlineStatus: true, // متاح اونلاين
+                systemRequirements: {
+                    minimum: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i3-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R5 240",
+                        storage: "5 GB متاح"
+                    },
+                    recommended: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i5-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R7 250x",
+                        storage: "5 GB متاح"
+                    }
+                },
+                downloadLinks: [
+                    { name: "تحميل اللعبة", url: "https://gofile.io/d/3kIw3kOY", icon: "fas fa-download" },
+                    { name: "ملف الاونلاين", url: "https://gofile.io/d/wSpemL", icon: "fas fa-download" },
+                    { name: "تحميل باتش اللعبة", url: "https://pixeldrain.com/u/a5Db12Kr", icon: "fas fa-download" }
+                ]
+            },
+            needleinahaystack: {
+                title: "Needle In A Haystack",
+                description: "دةالباسورد بتاع ملفات فك ضغط اللعبة والاونلاين:online-fix.me",
+                image: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/5085740/c4f0eebd5422df95a4dc9984eaa4304c0f1990c0/header.jpg?t=1791928860.png",
+                platform: "PC",
+                rating: 4.9,
+                category: "games",
+                size: "800MB",
+                developer: "Needle In A Haystack",
+                releaseYear: "2026",
+                language: "العربية + متعدد اللغات",
+                videoId: "#",
+                version: "v1.2.7",
+                onlineStatus: true, // متاح اونلاين
+                systemRequirements: {
+                    minimum: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i3-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R5 240",
+                        storage: "5 GB متاح"
+                    },
+                    recommended: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i5-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R7 250x",
+                        storage: "5 GB متاح"
+                    }
+                },
+                downloadLinks: [
+                    { name: "تحميل اللعبة", url: "https://gofile.io/d/RiXvDWuX", icon: "fas fa-download" },
+                    { name: "ملف الاونلاين", url: "https://gofile.io/d/T7LhbX1E", icon: "fas fa-download" },
+                    { name: "تحميل باتش اللعبة", url: "https://pixeldrain.com/u/nCkDAZw7", icon: "fas fa-download" }
+                ]
+            },
+            linkpenguins: {
+                title: "LINK Penguins",
+                description: "دةالباسورد بتاع ملفات فك ضغط اللعبة والاونلاين:online-fix.me",
+                image: "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3969510/a8f0c87d7a9e6ed57257214b481c89a32eb73edb/capsule_616x353.jpg?t=1776954970.png",
+                platform: "PC",
+                rating: 4.9,
+                category: "games",
+                size: "1.62G",
+                developer: "LINK Penguins",
+                releaseYear: "2026",
+                language: "العربية + متعدد اللغات",
+                videoId: "#",
+                version: "v1.1.16",
+                onlineStatus: true, // متاح اونلاين
+                systemRequirements: {
+                    minimum: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i3-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R5 240",
+                        storage: "5 GB متاح"
+                    },
+                    recommended: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i5-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R7 250x",
+                        storage: "5 GB متاح"
+                    }
+                },
+                downloadLinks: [
+                    { name: "تحميل اللعبة", url: "https://koramaup.com/ay9P", icon: "fas fa-download" },
+                    { name: "ملف الاونلاين", url: "https://1cloudfile.com/Qvcj", icon: "fas fa-download" },
+                    { name: "تحميل باتش اللعبة", url: "https://1cloudfile.com/Qvcj", icon: "fas fa-download" }
+                ]
+            },
+            backroomsyellow: {
+                title: "Backrooms: Code Yellow",
+                description: "دةالباسورد بتاع ملفات فك ضغط اللعبة والاونلاين:online-fix.me",
+                image: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4694270/89a94e014b54f925af55d29121a6197fb76e7286/header.jpg?t=1790352033.png",
+                platform: "PC",
+                rating: 4.9,
+                category: "games",
+                size: "500MB",
+                developer: "Backrooms: Code Yellow",
+                releaseYear: "2026",
+                language: "العربية + متعدد اللغات",
+                videoId: "#",
+                version: "v0.0.1",
+                onlineStatus: true, // متاح اونلاين
+                systemRequirements: {
+                    minimum: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i3-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R5 240",
+                        storage: "5 GB متاح"
+                    },
+                    recommended: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i5-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R7 250x",
+                        storage: "5 GB متاح"
+                    }
+                },
+                downloadLinks: [
+                    { name: "تحميل اللعبة", url: "https://koramaup.com/aw2f", icon: "fas fa-download" },
+                    { name: "ملف الاونلاين", url: "https://1cloudfile.com/3yd5j", icon: "fas fa-download" },
+                    { name: "تحميل باتش اللعبة", url: "https://1cloudfile.com/2SfD0", icon: "fas fa-download" }
+                ]
+            },
+                   partyanimals: {
+                title: "Party Animals",
+                description: "دةالباسورد بتاع ملفات فك ضغط اللعبة والاونلاين:online-fix.me",
+                image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCvECQ3Z85Hpo1I17g-c4KAWH6qIuKZLRKP2JfeQvDZX2LTROqH2mOqEg&s=10.png",
+                platform: "PC",
+                rating: 4.9,
+                category: "games",
+                size: "15G",
+                developer: "Party Animals",
+                releaseYear: "2026",
+                language: "العربية + متعدد اللغات",
+                videoId: "#",
+                version: "v1.17.2.0",
+                onlineStatus: true, // متاح اونلاين
+                systemRequirements: {
+                    minimum: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i3-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R5 240",
+                        storage: "5 GB متاح"
+                    },
+                    recommended: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i5-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R7 250x",
+                        storage: "5 GB متاح"
+                    }
+                },
+                downloadLinks: [
+                    { name: "تحميل اللعبة1", url: "https://gofile.io/d/AjEAqkC7", icon: "fas fa-download" },
+                    { name: "تحميل اللعبة2", url: "https://gofile.io/d/KR06TfYu", icon: "fas fa-download" },
+                    { name: "تحميل اللعبة3", url: "https://gofile.io/d/eELrEPdD", icon: "fas fa-download" }
+                ]
+            },
+            pes13: {
                 title: "Pes13 Online",
                 description: "دةالباسورد بتاع ملفات فك ضغط اللعبة والاونلاين:online-fix.me",
                 image: "https://upload.wikimedia.org/wikipedia/en/4/46/Pro_Evolution_Soccer_2013_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original.png",
