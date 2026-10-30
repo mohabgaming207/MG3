@@ -64,7 +64,7 @@
                     <div class="mg-prod-body">
                         <div class="mg-prod-stars"><small>5.0</small>★★★★★</div>
                         <h3 class="mg-prod-name">${p.name}</h3>
-                        <p class="mg-prod-desc">${p.desc}</p>
+                        <p class="mg-prod-desc">${p.desc || ""}</p>
                         <div class="mg-prod-foot">
                             <button class="mg-prod-cart" onclick="window.__storeAdd('${p.id}')" aria-label="أضف للعربة">
                                 <i class="fas fa-shopping-cart"></i>
@@ -183,7 +183,79 @@
 
         // Enhanced Data with Online Status Control
         const gamesData = {
-        farcry: {
+        pes13: {
+                title: "Pes13 Online",
+                description: "دةالباسورد بتاع ملفات فك ضغط اللعبة والاونلاين:online-fix.me",
+                image: "https://upload.wikimedia.org/wikipedia/en/4/46/Pro_Evolution_Soccer_2013_cover.jpg?utm_source=en.wikipedia.org&utm_campaign=index&utm_content=original.png",
+                platform: "PC",
+                rating: 4.9,
+                category: "games",
+                size: "6G",
+                developer: "Pes13 Online",
+                releaseYear: "2026",
+                language: "العربية + متعدد اللغات",
+                videoId: "#",
+                version: "v1.0",
+                onlineStatus: true, // متاح اونلاين
+                systemRequirements: {
+                    minimum: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i3-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R5 240",
+                        storage: "5 GB متاح"
+                    },
+                    recommended: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i5-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R7 250x",
+                        storage: "5 GB متاح"
+                    }
+                },
+                downloadLinks: [
+                    { name: "تحميل اللعبة", url: "https://upfilesgo.com/xmz3QY", icon: "fas fa-download" },
+                    { name: "ملف الاونلاين", url: "https://t.me/gametronix/95", icon: "fas fa-download" },
+                    { name: "تحميل باتش اللعبة", url: "https://upfilesgo.com/NJpmrxt", icon: "fas fa-download" }
+                ]
+            },
+                   crash: {
+                title: "Crash Team Racing",
+                description: "دةالباسورد بتاع ملفات فك ضغط اللعبة والاونلاين:online-fix.me",
+                image: "https://assets.nintendo.com/image/upload/ar_16:9,c_lpad,w_1240/b_white/f_auto/q_auto/store/software/switch/70010000016211/54604e9a2dfd69c7cacef0faf07b2189b9f31c746655590e011a533eb7f79b8d.png",
+                platform: "PC",
+                rating: 4.9,
+                category: "games",
+                size: "22G",
+                developer: "Crash Team Racing",
+                releaseYear: "2026",
+                language: "العربية + متعدد اللغات",
+                videoId: "VczUhb3TgPg",
+                version: "v0.7.3",
+                onlineStatus: true, // متاح اونلاين
+                systemRequirements: {
+                    minimum: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i3-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R5 240",
+                        storage: "5 GB متاح"
+                    },
+                    recommended: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i5-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R7 250x",
+                        storage: "5 GB متاح"
+                    }
+                },
+                downloadLinks: [
+                    { name: "النسخة الاوروبية", url: "https://gofile.io/d/qfS26KyH", icon: "fas fa-download" },
+                    { name: "النسخة الامريكية", url: "https://gofile.io/d/PxvjEKbq", icon: "fas fa-download" },
+                    { name: "تحميل اخر للعبة", url: "https://gofile.io/d/qfS26KyH", icon: "fas fa-download" }
+                ]
+            },
+                   farcry: {
                 title: "Far Cry 3",
                 description: "دةالباسورد بتاع ملفات فك ضغط اللعبة والاونلاين:online-fix.me",
                 image: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/220240/e24302fd0b603ceddc1f09f8528b4b58e6990923/capsule_616x353.jpg?t=1785282057.png",
@@ -6679,4 +6751,97 @@ document.addEventListener('DOMContentLoaded',function(){
     });
 
     window.MG_SOCIALS = { youtube: YT_URL, tiktok: TK_URL };
+})();
+
+/* =========================================================
+   MG BUTTON FX v2 — engine
+   Cursor tilt (3D) + glow spot + tap ripple, works with mouse & touch
+   ========================================================= */
+(function(){
+    'use strict';
+    if (window.__MG_BTN_FX__) return;
+    window.__MG_BTN_FX__ = true;
+
+    var SEL = 'button, .nav-link, .mg-cat-tile, .download-btn, .download-link, ' +
+              '.cta, .mg-btn, .store-btn, .worldcup-btn, .pcchecker-btn, ' +
+              '.chatbot-btn, .community-btn, .floating-btn, .mg-cart-btn-dark, ' +
+              '.mg-hero-btn, .mg-chip, .fsp-chip, .fsp-btn, ' +
+              '.mg-prod-cart, .mg-mystery-fab, .dl-gate-go, ' +
+              '.nav-search-icon, .lang-toggle-btn, .mobile-menu-btn, ' +
+              '.fsp-close, .fsp-clear';
+
+    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var current = null;
+
+    function match(target){
+        if (!target || !target.closest) return null;
+        return target.closest(SEL);
+    }
+
+    function ensureFx(el){
+        if (el.__mgFx) return;
+        el.__mgFx = true;
+        var spot = document.createElement('span');
+        spot.className = 'mg-glowspot';
+        el.appendChild(spot);
+    }
+
+    function resetTilt(el){
+        if (!el) return;
+        el.style.setProperty('--mg-rx', '0deg');
+        el.style.setProperty('--mg-ry', '0deg');
+    }
+
+    function ripple(el, clientX, clientY){
+        var r = el.getBoundingClientRect();
+        var d = Math.max(r.width, r.height) * 1.15;
+        var s = document.createElement('span');
+        s.className = 'mg-ripple';
+        s.style.width = d + 'px';
+        s.style.height = d + 'px';
+        s.style.left = (clientX - r.left - d / 2) + 'px';
+        s.style.top = (clientY - r.top - d / 2) + 'px';
+        el.appendChild(s);
+        setTimeout(function(){ s.remove(); }, 700);
+    }
+
+    if (window.PointerEvent){
+        document.addEventListener('pointermove', function(e){
+            var el = match(e.target);
+            if (el !== current){
+                resetTilt(current);
+                current = el;
+            }
+            if (!el || reduced) return;
+            ensureFx(el);
+            var r = el.getBoundingClientRect();
+            if (!r.width || !r.height) return;
+            var px = (e.clientX - r.left) / r.width;
+            var py = (e.clientY - r.top) / r.height;
+            el.style.setProperty('--mg-mx', (px * 100).toFixed(1) + '%');
+            el.style.setProperty('--mg-my', (py * 100).toFixed(1) + '%');
+            el.style.setProperty('--mg-rx', ((0.5 - py) * 9).toFixed(2) + 'deg');
+            el.style.setProperty('--mg-ry', ((px - 0.5) * 11).toFixed(2) + 'deg');
+        }, { passive: true });
+
+        document.addEventListener('pointerout', function(e){
+            var el = match(e.target);
+            if (el && el === current && (!e.relatedTarget || !el.contains(e.relatedTarget))){
+                resetTilt(el);
+                current = null;
+            }
+        }, { passive: true });
+
+        document.addEventListener('pointerdown', function(e){
+            var el = match(e.target);
+            if (!el) return;
+            ripple(el, e.clientX, e.clientY);
+        }, { passive: true });
+    } else {
+        /* Fallback for very old browsers: ripple only */
+        document.addEventListener('mousedown', function(e){
+            var el = match(e.target);
+            if (el) ripple(el, e.clientX, e.clientY);
+        }, { passive: true });
+    }
 })();
