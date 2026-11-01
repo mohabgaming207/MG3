@@ -183,7 +183,79 @@
 
         // Enhanced Data with Online Status Control
         const gamesData = {
-        crack: {
+        scamwith: {
+                title: "Scam With Your Friends",
+                description: "دةالباسورد بتاع ملفات فك ضغط اللعبة والاونلاين:online-fix.me",
+                image: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4954910/128effac3212fc1b92b4f6cd8891995df0d4b199/header.jpg?t=1792556475.png",
+                platform: "PC",
+                rating: 4.9,
+                category: "games",
+                size: "3.4G",
+                developer: "Scam With Your Friends",
+                releaseYear: "2026",
+                language: "العربية + متعدد اللغات",
+                videoId: "#",
+                version: "v0.1.82",
+                onlineStatus: true, // متاح اونلاين
+                systemRequirements: {
+                    minimum: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i3-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R5 240",
+                        storage: "5 GB متاح"
+                    },
+                    recommended: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i5-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R7 250x",
+                        storage: "5 GB متاح"
+                    }
+                },
+                downloadLinks: [
+                    { name: "تحميل اللعبة", url: "https://gofile.io/d/ChYAGR0R", icon: "fas fa-download" },
+                    { name: "ملف الاونلاين", url: "https://gofile.io/d/VgugNuSM", icon: "fas fa-download" },
+                    { name: "تحميل اخر للعبة", url: "https://pixeldrain.com/u/4RC4SHrf", icon: "fas fa-download" }
+                ]
+            },
+            japaneseramensimulator: {
+                title: "Japanese Ramen Simulator",
+                description: "دةالباسورد بتاع ملفات فك ضغط اللعبة والاونلاين:online-fix.me",
+                image: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/4968640/307166efa12d7b776a606c66440a989fae5be1c4/capsule_616x353.jpg?t=1792334006.png",
+                platform: "PC",
+                rating: 4.9,
+                category: "games",
+                size: "4G",
+                developer: "Japanese Ramen Simulator",
+                releaseYear: "2026",
+                language: "العربية + متعدد اللغات",
+                videoId: "#",
+                version: "v1.0.1.132",
+                onlineStatus: true, // متاح اونلاين
+                systemRequirements: {
+                    minimum: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i3-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R5 240",
+                        storage: "5 GB متاح"
+                    },
+                    recommended: {
+                        os: "Windows 8/10/11 (64-Bit)",
+                        processor: "Intel i5-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz",
+                        memory: "8 GB RAM",
+                        graphics: "NVidia 650TI OR AMD R7 250x",
+                        storage: "5 GB متاح"
+                    }
+                },
+                downloadLinks: [
+                    { name: "تحميل اللعبة", url: "https://gofile.io/d/JNc9H9LE", icon: "fas fa-download" },
+                    { name: "ملف الاونلاين", url: "https://gofile.io/d/trm0M7iv", icon: "fas fa-download" },
+                    { name: "تحميل اخر للعبة", url: "https://pixeldrain.com/u/4H2ZmHqp", icon: "fas fa-download" }
+                ]
+            },
+                   crack: {
                 title: "CRACK",
                 description: "دةالباسورد بتاع ملفات فك ضغط اللعبة والاونلاين:online-fix.me",
                 image: "https://i.ytimg.com/vi/m6m25-zRJfU/maxresdefault.jpg",
